@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 35 30% 97%;
+    --foreground: 25 30% 12%;
+
+    --card: 35 25% 95%;
+    --card-foreground: 25 30% 12%;
+
+    --popover: 35 30% 97%;
+    --popover-foreground: 25 30% 12%;
+
+    --primary: 28 85% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 145 35% 28%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 35 20% 90%;
+    --muted-foreground: 25 15% 45%;
+
+    --accent: 15 70% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 20% 85%;
+    --input: 35 20% 85%;
+    --ring: 28 85% 55%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --gold: 45 90% 55%;
+    --terracotta: 15 65% 45%;
+    --cream: 40 35% 94%;
+    --coffee: 25 40% 20%;
+    --sage: 120 15% 75%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(28, 85%, 55%) 0%, hsl(15, 70%, 50%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(35, 25%, 95%) 0%, hsl(35, 30%, 92%) 100%);
+    --gradient-dark: linear-gradient(135deg, hsl(25, 40%, 15%) 0%, hsl(25, 30%, 12%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(25 30% 12% / 0.08);
+    --shadow-card: 0 8px 30px -8px hsl(25 30% 12% / 0.12);
+    --shadow-hover: 0 12px 40px -8px hsl(28 85% 55% / 0.25);
+
+    /* Fonts */
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Outfit', sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 25 30% 8%;
+    --foreground: 35 25% 95%;
+
+    --card: 25 25% 12%;
+    --card-foreground: 35 25% 95%;
+
+    --popover: 25 30% 8%;
+    --popover-foreground: 35 25% 95%;
+
+    --primary: 28 85% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 145 35% 35%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 25 20% 18%;
+    --muted-foreground: 35 15% 60%;
+
+    --accent: 15 70% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 25 20% 20%;
+    --input: 25 20% 20%;
+    --ring: 28 85% 55%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-hero);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .card-hover:hover {
+    @apply -translate-y-1;
+    box-shadow: var(--shadow-hover);
+  }
+
+  .glass {
+    @apply backdrop-blur-md bg-background/80;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.4s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+  .delay-400 { animation-delay: 400ms; }
+  .delay-500 { animation-delay: 500ms; }
+}

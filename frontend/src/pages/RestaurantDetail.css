@@ -1,0 +1,382 @@
+/* --- GENERAL --- */
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fdfcfb;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* --- LOADING --- */
+.loading {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff4eb;
+}
+
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid #f97316;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 12px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading p {
+  color: #b45309;
+  font-weight: 600;
+}
+
+/* --- HEADER NAV --- */
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 50;
+}
+
+.back-btn {
+  background: #fff;
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.verified {
+  background: #f97316;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  border-radius: 24px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* --- HERO --- */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  background: #fff;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(251, 191, 36, 0.1);
+}
+
+.hero-image {
+  position: relative;
+  flex: 1 1 40%;
+  height: 320px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heart-btn {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(255,255,255,0.9);
+  padding: 8px;
+  border-radius: 16px;
+}
+
+.heart-btn .favorited {
+  color: #f87171;
+  fill: #f87171;
+}
+
+.heart-btn .not-favorited {
+  color: #94a3b8;
+}
+
+.heat {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  gap: 4px;
+}
+
+.heat-flame {
+  color: #fb923c;
+}
+
+/* HERO INFO */
+.hero-info {
+  flex: 1 1 55%;
+  padding: 32px;
+  background: linear-gradient(to bottom right, #fff, #fff7ed);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-info h1 {
+  font-size: 48px;
+  font-weight: 900;
+  color: #1e293b;
+  margin: 8px 0;
+}
+
+.local-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #c2410c;
+  font-style: italic;
+}
+
+.cuisine-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #f97316;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.hero-stats .rating,
+.hero-stats .cuisine {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #fbbf24;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 24px;
+  font-weight: 700;
+}
+
+/* --- GRID LAYOUT --- */
+.content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+  margin-top: 32px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* --- INFO CARD --- */
+.info-card,
+.menu-card,
+.comments-card,
+.claim-card,
+.trending-card {
+  background: #fff;
+  padding: 24px;
+  border-radius: 32px;
+  box-shadow: 0 5px 20px rgba(251, 191, 36, 0.1);
+}
+
+.info-card h3,
+.menu-card h3,
+.comments-card h3,
+.claim-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+.info-card .label {
+  font-size: 10px;
+  color: #94a3b8;
+  font-weight: 700;
+  margin-top: 12px;
+  text-transform: uppercase;
+}
+
+.info-card .info {
+  font-size: 14px;
+  color: #334155;
+  font-weight: 700;
+  margin-top: 4px;
+  line-height: 1.5;
+}
+
+/* --- MENU CARD --- */
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.menu-header span {
+  background: #f1f5f9;
+  color: #64748b;
+  font-weight: 700;
+  font-size: 10px;
+  padding: 4px 8px;
+  border-radius: 16px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.menu-item {
+  background: rgba(255, 247, 237, 0.5);
+  border-radius: 24px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  color: #334155;
+}
+
+.menu-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  background: #fef3c7;
+  padding: 12px;
+  border-radius: 16px;
+  margin-top: 16px;
+  font-size: 12px;
+  color: #78350f;
+}
+
+/* --- COMMENTS --- */
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.comment {
+  display: flex;
+  gap: 12px;
+}
+
+.comment .avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  background: #ffedd5;
+  color: #c2410c;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-text {
+  background: #f1f5f9;
+  padding: 12px;
+  border-radius: 16px;
+  border-top-left-radius: 0;
+  flex: 1;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 4px;
+  color: #334155;
+}
+
+.comment-input {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.comment-input input {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 24px;
+  border: 2px solid #f97316;
+  outline: none;
+}
+
+.comment-input button {
+  background: #f97316;
+  border: none;
+  color: #fff;
+  border-radius: 24px;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+/* --- CLAIM + TRENDING CARDS --- */
+.claim-card button {
+  background: linear-gradient(to right, #f97316, #f59e0b);
+  color: #fff;
+  font-weight: 900;
+  padding: 12px 16px;
+  border-radius: 24px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.trending-card {
+  text-align: center;
+}
+
+.trending-card h4 {
+  font-style: italic;
+  font-weight: 900;
+  color: #1e293b;
+}
+
+.trending-card p {
+  font-size: 12px;
+  color: #64748b;
+}
