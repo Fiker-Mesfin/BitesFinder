@@ -5,13 +5,13 @@ BitesFinder
 Project Theme:
 This project is designed to simplify and enhance the way people discover restaurants in Addis Ababa. The city has a diverse culinary scene, with countless restaurants, each offering different experiences. However, finding the best spots can be time-consuming and often relies on scattered information from social media or word-of-mouth, which may not provide a complete picture of a restaurant's offerings.
 
-Our website addresses this problem by providing a comprehensive platform where users can access all the essential information about restaurants in one place. Users can explore details such as location, price range, menu options, ratings, and even additional branches for a given restaurant.
+The website addresses this problem by providing a comprehensive platform where users can access all the essential information about restaurants in one place. Users can explore details such as location, price range, menu options, ratings, and even additional branches for a given restaurant.
 
 The platform offers multiple ways to discover restaurants:
 
-By cuisine category: Ethiopian, Mexican, Italian, Fast Food, Desserts, Drinks, and more.
-By location: Popular areas like Bole, Summit, and other neighborhoods.
-By listing the available restaurants: if the user has no idea where to start , it provide list of restaurants including the famous one.
+-By cuisine category: Ethiopian, Mexican, Italian, Fast Food, Desserts, Drinks, and more.
+-By location: Popular areas like Bole, Summit, and other neighborhoods.
+-By listing the available restaurants: if the user has no idea where to start , it provide list of restaurants including the famous one.
 
 The core objective of the website is to save users time and effort, making restaurant discovery faster, more reliable, and personalized. By offering structured information and intuitive navigation, the project allows users to make informed dining choices and enjoy Addis Ababa’s vibrant culinary scene with ease.
 
