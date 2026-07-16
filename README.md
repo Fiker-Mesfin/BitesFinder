@@ -1,34 +1,60 @@
-Project title: 
-BitesFinder
+# Project Title
 
+**BitesFinder**
 
-Project Theme:
-This project is designed to simplify and enhance the way people discover restaurants in Addis Ababa. The city has a diverse culinary scene, with countless restaurants, each offering different experiences. However, finding the best spots can be time-consuming and often relies on scattered information from social media or word-of-mouth, which may not provide a complete picture of a restaurant's offerings.
+## Project Theme
 
-The website addresses this problem by providing a comprehensive platform where users can access all the essential information about restaurants in one place. Users can explore details such as location, price range, menu options, ratings, and even additional branches for a given restaurant.
+BitesFinder is a restaurant discovery platform designed to simplify how people find restaurants in Addis Ababa. The city offers a wide variety of dining options, each providing unique cuisines and experiences. However, discovering suitable restaurants often requires searching through multiple social media platforms or relying on recommendations, making the process time-consuming and inconsistent.
 
-The platform offers multiple ways to discover restaurants:
+This project addresses that challenge by providing a centralized platform where users can access detailed information about restaurants in one place. The website enables users to view restaurant locations, price ranges, menus, customer ratings, and available branches, helping them make informed dining decisions.
 
--By cuisine category: Ethiopian, Mexican, Italian, Fast Food, Desserts, Drinks, and more.
--By location: Popular areas like Bole, Summit, and other neighborhoods.
--By listing the available restaurants: if the user has no idea where to start , it provide list of restaurants including the famous one.
+Users can discover restaurants in several ways:
 
-The core objective of the website is to save users time and effort, making restaurant discovery faster, more reliable, and personalized. By offering structured information and intuitive navigation, the project allows users to make informed dining choices and enjoy Addis Ababa’s vibrant culinary scene with ease.
+* Browse by cuisine, including Ethiopian, Italian, Mexican, Fast Food, Desserts, Drinks, and more.
+* Explore restaurants by location, such as Bole, Summit, and other areas of Addis Ababa.
+* View a complete list of restaurants, allowing users who are unsure where to start to explore popular and recommended dining options.
 
-Team meambers
-Fiker Mesfin – Project Developer, Designer, and Researcher.
+The primary objective of BitesFinder is to save users time while making restaurant discovery more organized, reliable, and user-friendly through intuitive navigation and well-structured information.
 
-Short-description
-The website allows users to register and log in, or continue as a guest without an account. Registered users can save their discovered restaurants for future reference. The personalized dashboard features a home page with popular restaurants, a search bar, and separate food and drinks sections. Users can explore the restaurant page or the categories page to filter by cuisine type or location. Each restaurant includes a “View Details” button showing location, price range, menu options, ratings, and additional branches.
+## Team Members
 
-Challenges faced and lesson learned
-During the development of this project, I faced several front-end challenges that pushed me to better understand CSS and responsive design. One of the first challenges was creating the hamburger toggle menu for mobile users. At first, I struggled with using the checkbox input and label to make the menu appear and disappear correctly. I had to experiment with display, position, z-index, and transition properties to ensure the menu appeared smoothly over the content and did not disrupt other elements. Adjusting the spacing, alignment, and stacking order for each menu item taught me the importance of planning layouts carefully and thinking about how elements interact visually.
+**Fiker Mesfin** – Project Developer, Designer, and Researcher
 
-Another challenge was aligning the navigation links in the header. The links would shift, wrap, or appear uneven when the window was resized. I had to dive deep into flexbox properties like justify-content, align-items, and flex-wrap to achieve a consistent and responsive layout. Small adjustments in padding, margins, and widths made a huge difference, and I learned the importance of inspecting elements carefully and making incremental changes to see their effects in real time.
+## Project Description
 
-Working with media queries was also a significant learning experience. I needed all sections—menus, hero sections, category grids, and restaurant cards—to adapt perfectly to different screen sizes. This required me to think in terms of fluid layouts, adjust widths and heights of elements, and sometimes reorder sections to maintain visual balance. Through this, I learned how to make a design truly responsive, and how different screen sizes can drastically change how users experience a website.
+BitesFinder allows users to create an account, sign in, or continue as a guest. Registered users can save their favorite restaurants for future reference and access a personalized dashboard.
 
-Implementing the profile dropdown menu presented another challenge. I had to ensure it stayed aligned with the profile picture, appeared only when hovered, and did not interfere with the rest of the header layout. I spent time adjusting margins, padding, and positioning, and realized that keeping the HTML structure simple and semantic makes styling interactive elements much easier.
-I have also learned more about display:flex and display:grid.
+The application includes:
 
-Overall, these challenges taught me not only technical CSS skills but also problem-solving, patience, and attention to detail. I learned that building a responsive, user-friendly website requires careful planning, testing on multiple screen sizes, and making small, deliberate adjustments until everything works harmoniously. This experience strengthened my confidence in creating layouts that are both functional and visually appealing. 
+* User registration and authentication
+* Guest access without requiring an account
+* Home page displaying popular restaurants
+* Search functionality for restaurants
+* Separate food and drinks sections
+* Restaurant browsing page
+* Category-based filtering by cuisine and location
+* Detailed restaurant pages containing:
+
+  * Location
+  * Price range
+  * Menu information
+  * Customer ratings
+  * Additional restaurant branches
+
+The platform focuses on providing an intuitive user experience that helps users quickly discover restaurants that match their preferences.
+
+## Challenges Faced and Lessons Learned
+
+Developing BitesFinder presented several front-end challenges that significantly strengthened my understanding of responsive web design and modern CSS.
+
+One of the first challenges was implementing a responsive hamburger navigation menu for mobile devices. Initially, I found it difficult to use the checkbox and label technique to correctly toggle the navigation menu. I worked extensively with CSS properties such as `display`, `position`, `z-index`, and `transition` to ensure the menu opened smoothly, appeared above other page content, and maintained a clean user experience. This process improved my understanding of element positioning and stacking contexts.
+
+Another challenge involved creating a responsive navigation bar. As the browser window resized, navigation links would shift, wrap unexpectedly, or become misaligned. Solving this problem required a deeper understanding of Flexbox, particularly properties such as `justify-content`, `align-items`, `flex-wrap`, and `flex`. Through careful experimentation with spacing, margins, padding, and widths, I learned how small layout adjustments can greatly improve responsiveness and consistency across different screen sizes.
+
+Building a fully responsive interface using media queries was another valuable learning experience. Every major section—including the hero banner, restaurant cards, category grids, and menu layouts—needed to adapt seamlessly across desktop, tablet, and mobile devices. This required designing flexible layouts, resizing components, and reorganizing content when necessary to maintain usability and visual balance. As a result, I gained practical experience in creating responsive interfaces that provide a consistent experience regardless of screen size.
+
+I also encountered challenges while implementing the profile dropdown menu. Keeping the dropdown aligned with the profile icon while ensuring it appeared only when needed required careful use of positioning, spacing, and hover interactions. This reinforced the importance of maintaining clean HTML structure and writing organized CSS for interactive components.
+
+Throughout the project, I further strengthened my understanding of both Flexbox and CSS Grid, learning when each layout system is most appropriate for building responsive user interfaces.
+
+Overall, this project improved not only my technical skills in HTML, CSS, and responsive design but also my problem-solving abilities, patience, and attention to detail. I learned that developing a polished, user-friendly web application requires careful planning, continuous testing across different devices, and iterative improvements. The experience has increased my confidence in designing and building responsive, maintainable, and visually appealing web applications.
